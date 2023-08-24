@@ -1,0 +1,165 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <random>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    vector<string> strings = {
+"Ace in the Hole",
+"Adrenaline",
+"Aftercare",
+"Alert",
+"Any Means Necessary",
+"Appraisal",
+"Autodidact",
+"Background Player",
+"Balanced Landing",
+"Better than New",
+ "Bite the Bullet",
+"Blast Mine",
+"Blood Pact",
+"Blood Rush",
+"Boil Over",
+"Bond",
+"Boon : Circle of Healing",
+"Boon : Dark Theory",
+"Boon : Exponential",
+"Boon : Shadow Step",
+"Borrowed Time",
+"Botany Knowledge",
+"Breakdown",
+"Breakout",
+"Buckle Up",
+"Built to Last",
+"Calm Spirit",
+"Chemical Trap",
+"Clairvoyance",
+"Counterforce",
+"Cut Loose",
+"Dance With Me",
+"Dark Sense",
+"Dead Hard",
+"Deception",
+"Decisive Strike",
+"Deliverance",
+"Desperate Measures",
+"Detective's Hunch",
+"Distortion",
+"Diversion",
+"Dramaturgy",
+"Déjà Vu",
+"Empathic Connection",
+"Empathy",
+"Fast Track",
+"Flashbang",
+"Flip Flop",
+"Fogwise",
+"For the People",
+"Friendly Competition",
+"Guardian",
+"Head On",
+"Hope",
+"Hyperfocus",
+"Inner Focus",
+"Inner Healing",
+"Iron Will",
+"Kindred",
+"Kinship",
+"Leader",
+"Left Behind",
+"Light Footed",
+"Lightweight",
+"Lithe",
+"Low Profile",
+"Lucky Break",
+"Lucky Star",
+"Made for This",
+"Mettle of Man",
+"No Mither",
+"No One Left Behind",
+"Object of Obsession",
+"Off the Record",
+"Open Handed",
+"Overcome",
+"Overzealous",
+"Parental Guidance",
+"Pharmacy",
+"Plot Twist",
+"Plunderer's Instinct",
+"Poised",
+"Potential Energy",
+"Power Struggle",
+"Premonition",
+"Prove Thyself",
+"Quick & Quiet",
+"Quick Gambit",
+"Reactive Healing",
+"Reassurance",
+"Red Herring",
+"Renewal",
+"Repressed Alliance",
+"Residual Manifest",
+"Resilience",
+"Resurgence",
+"Rookie Spirit",
+"Saboteur",
+"Scavenger",
+"Scene Partner",
+"Self Aware",
+"Self Care",
+"Self Preservation",
+"Situational Awareness",
+"Slippery Meat",
+"Small Game",
+"Smash Hit",
+"Sole Survivor",
+"Solidarity",
+"Soul Guard",
+"Spine Chill",
+"Sprint Burst",
+"Stake Out",
+"Streetwise",
+"Teamwork: Collective Stealth",
+"Teamwork: Power of Two",
+"Technician",
+"Tenacity",
+"This Is Not Happening",
+"Troubleshooter",
+"Unbreakable",
+"Up the Ante",
+"Urban Evasion",
+"Vigil",
+"Visionary",
+"Wake Up!",
+"We'll Make It",
+"We're Gonna Live Forever",
+"Windows of Opportunity",
+"Wiretap",
+    };
+
+    const int numStringsToPick = 4;
+
+    if (numStringsToPick > strings.size()) {
+        cerr << "Error: Number of strings to pick is greater than the available strings.\n";
+        return 1;
+    }
+
+    // Initialize random generator
+    random_device rd;
+    mt19937 gen(rd());
+
+
+    // Shuffle the strings to ensure randomness
+    std::shuffle (strings.begin(), strings.end(), gen);
+
+    // Pick the first numStringsToPick strings
+    std::cout << "Randomly selected Survivor perks:\n";
+    for (int i = 0; i < numStringsToPick; ++i) {
+        std::cout << strings[i] << "\n";
+    }
+
+    return 0;
+}
