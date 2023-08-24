@@ -1,0 +1,28 @@
+#include <iostream>
+
+using namespace std;
+
+int number;
+
+int main()
+{
+	cout << "Hello! Please enter your name: " << endl;
+	string name;
+	cin >> name;
+
+
+	int number;
+	cout << name << ", please enter a number: " << endl;
+	cin >> number;
+
+	if (number % 2 == 0)
+	 {
+		 cout << name << " the number you entered is even!" << endl;
+
+	}
+	else
+	 {
+		cout << name << " the number you entered is odd!" << endl;
+
+	}
+}
