@@ -1,0 +1,29 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+	int a, b, c;
+	int pass = 50;
+	int totalNumbers = 3;
+
+
+	// Prompt user for name
+	cout << "Welcome! Please enter your name: ";
+
+	// Get user's name
+	string name;
+	cin >> name;
+
+	// Ask user to enter a number
+	cout << "Please enter a number" << endl;
+
+	int userInput;
+	cin >> userInput;
+
+	int result;
+	result = userInput * userInput;
+
+	cout << "The square result is " << result << endl;
+}
