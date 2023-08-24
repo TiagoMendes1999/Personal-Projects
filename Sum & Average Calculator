@@ -1,0 +1,52 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int main()
+{
+	int a, b, c;
+	int pass = 50;
+	int totalNumbers = 3;
+
+
+	// Prompt user for name
+	cout << "Welcome! Please enter your name: ";
+
+	// Get user's name
+	string name;
+	cin >> name;
+
+
+	// Welcome the user and display a hint to work out the Sum and Average of three numbers
+	cout << "Hi " << name << ". In order to work out the Sum and Averge of three numbers, we will need to add the three numbers together and then divide by how many numbers there are. " << endl;
+
+	cout << "What should the pass mark be?" << endl;
+	cin >> pass;
+
+	// Prompt user to enter three numbers
+	cout << name << ", please enter three numbers: " << endl;
+
+
+	// Get the user's three numbers
+	cin >> a >> b >> c;
+
+	// Store the Sum & Average as a float
+	float sum, average;
+
+	// sum = add up all the numbers
+	sum = a + b + c;
+
+	// average = divide the sum by how many numbers there are
+	average = (sum) / totalNumbers;
+
+
+
+	// Display the Sum & Average info to the user
+	cout << "The Sum is " << sum << endl;
+	cout << "The Average is " << average << endl;
+	if (average > pass)
+
+		cout << "Congratulations you passed! " << endl;
+
+}
