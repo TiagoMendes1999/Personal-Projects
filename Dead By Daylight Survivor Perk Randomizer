@@ -156,7 +156,7 @@ int main() {
     std::shuffle (strings.begin(), strings.end(), gen);
 
     // Pick the first numStringsToPick strings
-    std::cout << "Randomly selected survivor perks:\n";
+    std::cout << "Randomly selected Survivor perks:\n";
     for (int i = 0; i < numStringsToPick; ++i) {
         std::cout << strings[i] << "\n";
     }
