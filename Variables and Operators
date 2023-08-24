@@ -1,0 +1,36 @@
+#include <iostream>
+#include <string>
+
+// Using already made code via #include
+
+using namespace std;
+
+int main()
+{
+    // dataType variableName;
+    int age;
+    float weight;
+    double distance;
+    bool isAlive;
+    char initial;
+    string name;
+
+    unsigned short int betterAge;
+    long double hugeDistance;
+
+    age = 24;
+    weight = 190.5f;
+    distance = 1212.987;
+    isAlive = true;
+    initial = 'F';
+    name = "Tiago";
+
+    cout << "My name is " << name << " and I am " << age << " years old." << endl;
+    cout << "Am I Alive: " << isAlive << endl;
+
+    int newAge;
+    newAge = age = 25; // 24
+
+
+    int newestAge = 25;
+}
