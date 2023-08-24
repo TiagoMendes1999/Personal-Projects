@@ -1,0 +1,118 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <random>
+#include <algorithm>
+
+using namespace std;
+
+int main() {
+    vector<string> strings = {
+        "Choose Flight",
+        "Clear Eyes",
+        "Grappler",
+        "Efficient Backstabber",
+        "Bad Blood",
+        "Pick On Me",
+        "Tourniquet",
+        "Slippery",
+        "Agitator",
+        "Light On Your Feet",
+        "Bounce Back Better",
+        "Conditioned",
+        "Extra Drip",
+        "Cover Charge",
+        "Dead Weight",
+        "Clear Head",
+        "Meter Reader",
+        "Ran Track",
+        "Fast Hands",
+        "Rally Leader",
+        "Tae Kwon Door",
+        "Fuse Lights",
+        "Get it off me",
+        "Hare or Meat",
+        "Headstart",
+        "Am I Bleeding?",
+        "Cover Recovery",
+        "Fight AND Flight",
+        "Fight Back",
+        "20 / 20 Vision",
+        "Hush or Die",
+        "I Can Do This",
+        "I Can Make It",
+        "Bar Room Hero",
+        "I Know Engines",
+        "Immunity",
+        "Intuition",
+        "Medical Benefits",
+        "Jack in the Box",
+        "Jump Scare",
+        "Jump Start",
+        "Radar Detector",
+        "Knock Knock",
+        "Parting Gift",
+        "Deadbolt",
+        "Lifeline",
+        "Lone Survivor",
+        "Lucky Lockpicker",
+        "No Sell",
+        "No Shock",
+        "No Stopping",
+        "Out Of My Head",
+        "Overlooked",
+        "Empowered",
+        "Exit Strategy",
+        "Highly Skilled",
+        "Quick Exit",
+        "Rescue Medic",
+        "Second Wind",
+        "Saboteur",
+        "Safety in Numbers",
+        "Sanguine Shadow",
+        "Fish Hooks",
+        "What Doesn't Kill You",
+        "Resilient",
+        "Efficient Grappler",
+        "Choose Fight",
+        "Must Have Been the Wind",
+        "Speed Search",
+        "Spotter",
+        "Sneaky Pete",
+        "Last Ditch Effort",
+        "Been Workin' Out",
+        "High Tolerance",
+        "Stunt Double",
+        "There They Are",
+        "Efficient Locksmith",
+        "Tougher Stuff",
+        "Bomb Squad",
+        "Twinkle Toes",
+        "Tool Tracks",
+        "Wax On Wax Off",
+        "Well Trained",
+    };
+
+    const int numStringsToPick = 3;
+
+    if (numStringsToPick > strings.size()) {
+        cerr << "Error: Number of strings to pick is greater than the available strings.\n";
+        return 1;
+    }
+
+    // Initialize random generator
+    random_device rd;
+    mt19937 gen(rd());
+
+
+    // Shuffle the strings to ensure randomness
+    std::shuffle(strings.begin(), strings.end(), gen);
+
+    // Pick the first numStringsToPick strings
+    std::cout << "Randomly selected Victim perks:\n";
+    for (int i = 0; i < numStringsToPick; ++i) {
+        std::cout << strings[i] << "\n";
+    }
+
+    return 0;
+}
