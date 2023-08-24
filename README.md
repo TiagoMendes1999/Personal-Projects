@@ -1,3 +1,3 @@
 # Personal-Projects
 
-This repository will include personal projects I created whilst studying at CG Spectrum.
+This repository will include personal projects I created whilst studying Game Programming at CG Spectrum.
