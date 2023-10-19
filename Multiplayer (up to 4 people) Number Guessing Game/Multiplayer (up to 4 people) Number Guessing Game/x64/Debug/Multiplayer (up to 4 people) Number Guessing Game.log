@@ -1,0 +1,5 @@
+﻿  Multiplayer Number Guessing Game.cpp
+E:\source\repos\Multiplayer (up to 4 people) Number Guessing Game\Multiplayer (up to 4 people) Number Guessing Game\Multiplayer Number Guessing Game.cpp(82,19): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+E:\source\repos\Multiplayer (up to 4 people) Number Guessing Game\Multiplayer (up to 4 people) Number Guessing Game\Multiplayer Number Guessing Game.cpp(65): warning C4715: 'PlayNewRound': not all control paths return a value
+E:\source\repos\Multiplayer (up to 4 people) Number Guessing Game\Multiplayer (up to 4 people) Number Guessing Game\Multiplayer Number Guessing Game.cpp(169): warning C4715: 'DetermineResult': not all control paths return a value
+  Multiplayer (up to 4 people) Number Guessing Game.vcxproj -> E:\source\repos\Multiplayer (up to 4 people) Number Guessing Game\x64\Debug\Multiplayer (up to 4 people) Number Guessing Game.exe
