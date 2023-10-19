@@ -1,0 +1,5 @@
+﻿  Game Shop.cpp
+E:\source\repos\Game Shop\Game Shop\Game Shop.cpp(205,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\source\repos\Game Shop\Game Shop\Game Shop.cpp(210,27): warning C4244: '=': conversion from 'double' to 'float', possible loss of data
+E:\source\repos\Game Shop\Game Shop\Game Shop.cpp(272): warning C4715: 'PurchaseStock': not all control paths return a value
+  Game Shop.vcxproj -> E:\source\repos\Game Shop\x64\Debug\Game Shop.exe
