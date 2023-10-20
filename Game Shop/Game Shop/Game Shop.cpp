@@ -243,7 +243,7 @@ void DisplayCheckOutScreen(string purchasedItems[], double itemPrice[], string p
 		system("cls");
 		DisplayInventoryMenu(playerName, playerCash, stockQuantityRemaining, itemPrice, itemName, purchasedItems);
 	}
-	else if ((userInputStr == "Return" || userInputStr == "return"))
+	else if (userInputStr == "Return" || userInputStr == "return")
 	{
 		system("cls");
 		RemoveItemFromPurchase(purchasedItems, itemPrice, playerCash, stockQuantityRemaining, itemName, playerName); 
